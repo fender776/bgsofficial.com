@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link
+    rel="shortcut icon"
+    href="BGS.jpeg"
+    type="image/x-icon"
+  />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>'BGS'A</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 70%;
+            margin: 0 auto;
+            border: 1px solid #000;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group-half {
+            width: 48%;
+            display: inline-block;
+        }
+        .form-group-half label {
+            display: inline-block;
+        }
+        .form-group-half input {
+            width: calc(100% - 10px);
+            display: inline-block;
+            margin-left: 10px;
+        }
+        .form-group-half select {
+            width: calc(100% - 10px);
+            display: inline-block;
+            margin-left: 10px;
+        }
+        .form-group-third {
+            width: 30%;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .form-group-third label {
+            display: inline-block;
+        }
+        .form-group-third input {
+            width: calc(100% - 10px);
+            display: inline-block;
+            margin-left: 10px;
+        }
+        .form-group textarea {
+            height: 100px;
+        }
+
+        ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  transition: left 0.3s;
+}
+
+ul li a {
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text-dark);
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  border-top-color: var(--secondary-color);
+  border-bottom-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul>
+
+            <li><a href="#" class="button" onclick="location.href='file:///C:/Users/Hasan/Desktop/My%20own%20website/index2.html#'">HOME</a>
+            
+          </ul>
+        <div class="header">
+            Admission Form
+           
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="formNo">Form No.:</label>
+                <input type="text" id="formNo" name="formNo">
+            </div>
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+            </div>
+            <div class="form-group">
+                <label for="admissionNo">Admission No.:</label>
+                <input type="text" id="admissionNo" name="admissionNo">
+            </div>
+            <div class="form-group">
+                <label for="photo">Affix passport size photo of the student:</label>
+                <input type="file" id="photo" name="photo">
+            </div>
+            <div class="form-group">
+                <label for="name">Name of pupil (in capital letters):</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group-half">
+                <label for="classAdmission">Admission sought for Class:</label>
+                <input type="text" id="classAdmission" name="classAdmission">
+            </div>
+            <div class="form-group-half">
+                <label for="academicYear">Academic Year:</label>
+                <input type="text" id="academicYear" name="academicYear">
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+            <div class="form-group-half">
+                <label for="aadharNo">Aadhar No.:</label>
+                <input type="text" id="aadharNo" name="aadharNo">
+            </div>
+            <div class="form-group-half">
+                <label for="placeOfBirth">Place of Birth:</label>
+                <input type="text" id="placeOfBirth" name="placeOfBirth">
+            </div>
+            <div class="form-group-half">
+                <label for="nationality">Nationality:</label>
+                <input type="text" id="nationality" name="nationality">
+            </div>
+            <div class="form-group-half">
+                <label for="religion">Religion:</label>
+                <input type="text" id="religion" name="religion">
+            </div>
+            <div class="form-group">
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+            <div class="form-group">
+                <label>Caste:</label>
+                <input type="radio" id="bc" name="caste" value="bc">
+                <label for="bc">BC</label>
+                <input type="radio" id="sc" name="caste" value="sc">
+                <label for="sc">SC</label>
+                <input type="radio" id="st" name="caste" value="st">
+                <label for="st">ST</label>
+                <input type="radio" id="oc" name="caste" value="oc">
+                <label for="oc">OC</label>
+            </div>
+            <div class="form-group">
+                <label for="residentialAddress">Residential Address:</label>
+                <textarea id="residentialAddress" name="residentialAddress"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="pinCode">Pin Code:</label>
+                <input type="text" id="pinCode" name="pinCode">
+            </div>
+            <div class="form-group">
+                <label for="bloodGroup">Blood group:</label>
+                <input type="text" id="bloodGroup" name="bloodGroup">
+            </div>
+            <div class="form-group">
+                <label for="motherTongue">Mother Tongue:</label>
+                <input type="text" id="motherTongue" name="motherTongue">
+            </div>
+            <div class="form-group">
+                <label for="identificationMarks">Identification Marks:</label>
+                <textarea id="identificationMarks" name="identificationMarks"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="previousAcademicRecord">Previous academic record:</label>
+                <textarea id="previousAcademicRecord" name="previousAcademicRecord"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="achievements">Appraisal of your Child:</label>
+                <textarea id="achievements" name="achievements"></textarea>
+            </div>
+            <div class="form-group">
+                <label>General Behaviour:</label>
+                <input type="radio" id="mild" name="behaviour" value="mild">
+                <label for="mild">Mild</label>
+                <input type="radio" id="normal" name="behaviour" value="normal">
+                <label for="normal">Normal</label>
+                <input type="radio" id="hyperactive" name="behaviour" value="hyperactive">
+                <label for="hyperactive">Hyperactive</label>
+            </div>
+            <div class="form-group">
+                <label for="illness">Please mention, in brief, if there is any history of previous illness, allergy or physical/psychological illness:</label>
+                <textarea id="illness" name="illness"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="secondLanguage">Second language in previous class:</label>
+                <input type="text" id="secondLanguage" name="secondLanguage">
+            </div>
+            <div class="form-group">
+                <label for="thirdLanguage">Third language in previous class:</label>
+                <input type="text" id="thirdLanguage" name="thirdLanguage">
+            </div>
+            <div class="form-group">
+                <label for="languageProficiency">Language preference (from Standard VI):</label>
+                <div class="form-group-half">
+                    <label for="firstLanguage">First language:</label>
+                    <input type="text" id="firstLanguage" name="firstLanguage">
+                </div>
+                <div class="form-group-half">
+                    <label for="secondLangPref">Second language:</label>
+                    <input type="text" id="secondLangPref" name="secondLangPref">
+                </div>
+                <div class="form-group-half">
+                    <label for="thirdLangPref">Third language:</label>
+                    <input type="text" id="thirdLangPref" name="thirdLangPref">
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

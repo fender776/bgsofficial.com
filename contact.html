@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link
+    rel="shortcut icon"
+    href="BGS.jpeg"
+    type="image/x-icon"
+  />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>'BGS'CF</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to right, #8e44ad, #3498db);
+            font-family: Arial, sans-serif;
+        }
+
+        .contact-container {
+            display: flex;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            overflow: hidden;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .left-panel {
+            background-color: #00bfa6;
+            color: white;
+            padding: 50px;
+            text-align: center;
+            flex: 1;
+        }
+
+        .left-panel h2 {
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .left-panel p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .right-panel {
+            background-color: white;
+            padding: 50px;
+            flex: 1;
+        }
+
+        .right-panel h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .right-panel form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .right-panel form input,
+        .right-panel form textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .right-panel form input[type="submit"] {
+            background-color: #00bfa6;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .right-panel form input[type="submit"]:hover {
+            background-color: #008c7a;
+        }
+
+        .required {
+            color: red;
+        }
+
+        ul {
+  display: inline;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  transition: left 0.3s;
+  color: black;
+}
+
+ul li a {
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text-dark);
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  border-top-color: var(--secondary-color);
+  border-bottom-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <div class="left-panel">
+            <h2>Let's Chat</h2>
+            <p>
+                Whether you have a question, want to start a project, or simply want to connect. 
+                Feel free to send me a message in the contact form.
+            </p>
+
+            <ul>
+
+                <li><a href="#" class="button" onclick="location.href='file:///C:/Users/Hasan/Desktop/My%20own%20website/index2.html#'">HOME</a>
+                
+              </ul>
+        </div>
+        <div class="right-panel">
+            <h2>Contact</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name <span class="required">*</span></label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- <label for="company">Company</label> -->
+                <!-- <input type="text" id="company" name="company"> -->
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
